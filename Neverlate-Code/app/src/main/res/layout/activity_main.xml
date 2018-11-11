@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="326dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="31dp"
+        android:background="@drawable/custom_button"
+        android:text="Login"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/login"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="39dp"
+        android:background="@drawable/login"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <TextView
+        android:id="@+id/registerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Not Registered? Sign Up Here!"
+        android:textColor="#0080ff"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/reset_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/reset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="102dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Forgot Your Password?"
+        android:textColor="#0080ff"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registerView"
+        app:layout_constraintTop_toBottomOf="@+id/registerView" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".ClockActivity">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:headerBackground="@drawable/longbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TimePicker>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        android:text="Please set the time of start working"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settime" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Set"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/unset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="3sp"
+            android:paddingRight="3sp"
+            android:text="Unset"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/stopAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:onClick="stop"
+            android:paddingLeft="3sp"
+            android:paddingRight="3sp"
+            android:text="Stop"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/logout_neverlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:onClick="onClickLogOut"
+            android:textColor="@android:color/white"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+</LinearLayout>

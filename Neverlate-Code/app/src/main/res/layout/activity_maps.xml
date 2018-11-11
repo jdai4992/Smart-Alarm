@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="location" />
+
+    <Button
+        android:id="@+id/toPrepare"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/longbutton"
+        android:onClick="toPrepare"
+        android:text="Prepare"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="100dp"
+        android:text="Distance"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/costtime"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/route"
+        android:layout_toEndOf="@+id/route"
+        android:text="Estimate Time"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/route" />
+
+    <TextView
+        android:id="@+id/showrote"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:hint="0.0 KM"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/showrote"
+        android:layout_toEndOf="@+id/showrote"
+        android:hint="0 MIN"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

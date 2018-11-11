@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/userName_title"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-1dp"
+        android:text="Enter Your Username:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_userName"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/userName_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/passWord_title"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_userName"
+        android:layout_marginTop="40dp"
+        android:text="Enter Your Password:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_passWord"
+        android:layout_width="344dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/passWord_title"
+        android:ems="10"
+        android:hint="Password (More than 8 Characters)"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_passWord"
+        android:text="Enter Email-Address:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/email_title"
+        android:ems="10"
+        android:hint="Your E-Mail Address"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/security_question_intro"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_email"
+        android:text="Please enter the real answer for following security questions. it will help protect your personal information and reset your account."
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/securityQuestion_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/security_question_intro"
+        android:text="Security Question 1: What is your real name?"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/edit_security_question_1"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/securityQuestion_title1"
+        android:hint="Your Real Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/securityQuestion_title2"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_security_question_1"
+        android:text="Security Question 2: When is your birthday?"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_security_question_2"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/securityQuestion_title2"
+        android:ems="10"
+        android:hint="Your Birthday (YYYY-MM-DD)"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/securityQuestion_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_security_question_2"
+        android:text="Security Question 3: What is your favorite color?"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_security_question_3"
+        android:layout_width="332dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/securityQuestion_title3"
+        android:ems="10"
+        android:hint="Your Favorite Color"
+        android:inputType="textPersonName" />
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edit_security_question_3"
+        android:background="@drawable/custom_button"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/edit_security_question_3"
+        android:background="@drawable/custom_button"
+        android:text="Cancel" />
+
+</RelativeLayout>
